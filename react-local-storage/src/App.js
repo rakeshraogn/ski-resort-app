@@ -25,6 +25,7 @@ const App = () => {
     }
     localStorage.setItem('resorts', JSON.stringify(updatedResorts));
     setResorts(updatedResorts);
+    setErrorMessage("");
   };
 
   const handleDelete = (index) => {
@@ -49,6 +50,7 @@ const App = () => {
     const updatedResorts = [...resorts, [newResort.name, newResort.location, newResort.runs, newResort.image]];
     localStorage.setItem('resorts', JSON.stringify(updatedResorts));
     setResorts(updatedResorts);
+    setErrorMessage("");
     setNewResort({ name: '', location: '', runs: '', image: '' });
   };
 
@@ -71,7 +73,7 @@ const App = () => {
       </header>
       <h2>Add New Resort</h2>
       {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
-      <div>
+      <div class="disp">
         <input
           type="text"
           placeholder="Resort Name"
@@ -79,6 +81,7 @@ const App = () => {
           value={newResort.name}
           onChange={handleInputChange}
         />
+        <label style={{ margin:"5px" }}>  </label>
         <input
           type="text"
           placeholder="Location"
@@ -86,6 +89,7 @@ const App = () => {
           value={newResort.location}
           onChange={handleInputChange}
         />
+                <label style={{ margin:"5px" }}>  </label>
         <input
           type="text"
           placeholder="No of Ski Runs"
@@ -93,8 +97,15 @@ const App = () => {
           value={newResort.runs}
           onChange={handleInputChange}
         />
-        <input type="file" onChange={handleImageChange} />
-        <button onClick={handleAdd}>Add</button>
+        <label style={{ margin:"15px" }}>  </label>
+        <label htmlFor="filePicker" style={{ background:"lightgray", padding:"3px" }}>
+Add image
+</label>
+        <label style={{ margin:"5px" }}>  </label>
+        <input id="filePicker" type="file" style={{visibility:"hidden"}} placeholder="Add Image" onChange={handleImageChange} />
+        <br></br>
+        <br></br>
+        <button onClick={handleAdd} >Add Resort values</button>
       </div>
       <h2>Existing Resorts</h2>
       <table>

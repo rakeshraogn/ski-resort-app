@@ -8,7 +8,7 @@ test('shows error message if required fields are not filled', () => {
   const nameInput = getByPlaceholderText('Resort Name');
   const locationInput = getByPlaceholderText('Location');
   const runsInput = getByPlaceholderText('No of Ski Runs');
-  const addButton = getByText('Add');
+  const addButton = getByText('Add Resort values');
 
   fireEvent.click(addButton);
 
@@ -24,7 +24,7 @@ test('Should display error message if the number of ski runs is not an integer',
   const nameInput = getByPlaceholderText('Resort Name');
   const locationInput = getByPlaceholderText('Location');
   const runsInput = getByPlaceholderText('No of Ski Runs');
-  const addButton = getByText('Add');
+  const addButton = getByText('Add Resort values');
   
   fireEvent.change(nameInput, { target: { value: 'testResort' } });
   fireEvent.change(locationInput, { target: { value: 'testLocation' } });

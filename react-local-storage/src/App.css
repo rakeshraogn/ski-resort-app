@@ -12,6 +12,12 @@
   justify-content: center;
 }
 
+.disp {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
 table {
   margin: 0 auto;
   border-collapse: collapse;
