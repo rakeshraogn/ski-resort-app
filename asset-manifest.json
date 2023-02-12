@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ski-resort-app/static/css/main.b0e0f827.css",
-    "main.js": "/ski-resort-app/static/js/main.3120c1d6.js",
+    "main.js": "/ski-resort-app/static/js/main.49db8ab6.js",
     "static/js/787.bea7be57.chunk.js": "/ski-resort-app/static/js/787.bea7be57.chunk.js",
     "static/media/colorado-mountains.jpg": "/ski-resort-app/static/media/colorado-mountains.b7e734497e5cbeb41a33.jpg",
     "index.html": "/ski-resort-app/index.html",
     "main.b0e0f827.css.map": "/ski-resort-app/static/css/main.b0e0f827.css.map",
-    "main.3120c1d6.js.map": "/ski-resort-app/static/js/main.3120c1d6.js.map",
+    "main.49db8ab6.js.map": "/ski-resort-app/static/js/main.49db8ab6.js.map",
     "787.bea7be57.chunk.js.map": "/ski-resort-app/static/js/787.bea7be57.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0e0f827.css",
-    "static/js/main.3120c1d6.js"
+    "static/js/main.49db8ab6.js"
   ]
 }
